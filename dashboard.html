@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="navbar">
+    <h2>Dayflow</h2>
+    <div>
+      <span id="userName"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="dashboard">
+    <h2 id="welcomeText"></h2>
+
+    <!-- Employee View -->
+    <div class="card present" onclick="location.href='attendance-history.html'">
+  <h3>Attendance</h3>
+  <p>View Attendance History</p>
+</div>
+
+
+
+      <div class="card leave" onclick="location.href='leave.html'">
+  <h3>Leave</h3>
+  <p>Apply for Leave</p>
+</div>
+
+    <div class="card absent" onclick="location.href='profile.html'">
+  <h3>Profile</h3>
+  <p>View Profile</p>
+</div>
+
+    </div>
+
+    <!-- HR View -->
+    <div id="hrSection" class="cards" style="display:none">
+      <div class="card present">
+        <h3>Employee List</h3>
+        <p>Manage Employees</p>
+      </div>
+
+      <div class="card leave">
+        <h3>Leave Approvals</h3>
+        <p>Approve / Reject</p>
+      </div>
+
+      <div class="card absent">
+        <h3>Reports</h3>
+        <p>Attendance & Payroll</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- IMPORTANT: script at bottom -->
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+

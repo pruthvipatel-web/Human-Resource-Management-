@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance | Dayflow</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>Dayflow</h2>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <div class="dashboard">
+    <h2>Attendance</h2>
+
+    <div class="cards">
+      <div class="card present">
+        <h3>Check In</h3>
+        <button onclick="checkIn()">Check In</button>
+      </div>
+
+      <div class="card absent">
+        <h3>Check Out</h3>
+        <button onclick="checkOut()">Check Out</button>
+      </div>
+    </div>
+
+    <h3 style="margin-top:30px">Today’s Record</h3>
+    <p id="attendanceStatus">No activity yet</p>
+  </div>
+
+  <script src="js/attendance.js"></script>
+</body>
+</html>
